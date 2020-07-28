@@ -1,0 +1,143 @@
+<!-- =============== Start of Header 1 Navigation =============== -->
+<header class="header1">
+  <nav class="navbar navbar-default navbar-static-top fluid_header centered">
+      <div class="container">
+
+          <!-- Logo -->
+          <div class="col-md-2 col-sm-6 col-xs-8 nopadding">
+              <a class="navbar-brand nomargin" routerLink='/'><img src="/assets/images/logo.svg" alt="logo"></a>
+              <!-- INSERT YOUR LOGO HERE -->
+          </div>
+
+          <!-- ======== Start of Main Menu ======== -->
+          <div class="col-md-10 col-sm-6 col-xs-4 nopadding">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle toggle-menu menu-right push-body" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+
+              <!-- Start of Main Nav -->
+              <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="main-nav">
+                  <ul class="nav navbar-nav pull-right">
+
+                      <!-- Mobile Menu Title -->
+                      <li class="mobile-title">
+                          <h4>main menu</h4></li>
+
+                      <!-- Simple Menu Item -->
+                      <li class="dropdown simple-menu active">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Home</a>
+
+                      </li>
+
+                      <!-- Simple Menu Item -->
+                      <li class="dropdown simple-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">For Candidates<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><a routerLink= '/searchJob' >search jobs 1</a></li>
+                              <li><a routerLink= '/submitResume' >submit resume</a></li>
+                          </ul>
+                      </li>
+
+                      <!-- Simple Menu Item -->
+                      <li class="dropdown simple-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">for employers<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><a routerLink = '/findCandidate' >find a candidate 1</a></li>
+                              <li><a routerLink = '/postJob' >post a job</a></li>
+                          </ul>
+                      </li>
+
+
+                      <!-- Simple Menu Item -->
+                      <li class="dropdown simple-menu">
+                          <a routerLink='/blog' class="dropdown-toggle" data-toggle="dropdown" role="button">blog</a>
+
+                      </li>
+                       <!-- Simple Menu Item -->
+                       <li class="dropdown simple-menu">
+                        <a routerLink='/about' class="dropdown-toggle" data-toggle="dropdown" role="button">About Us</a>
+
+                    </li>
+
+                      <!-- Login Menu Item -->
+                      <li class="menu-item login-btn">
+                          <a id="modal_trigger" href="javascript:void(0)" role="button"><i class="fa fa-lock"></i>login</a>
+                      </li>
+
+                  </ul>
+              </div>
+              <!-- End of Main Nav -->
+          </div>
+          <!-- ======== End of Main Menu ======== -->
+
+      </div>
+  </nav>
+</header>
+<!-- =============== End of Header 1 Navigation =============== -->
+ <!-- ===== Start of Login Pop Up div ===== -->
+ <div class="cd-user-modal">
+  <!-- this is the entire modal form, including the background -->
+  <div class="cd-user-modal-container">
+      <!-- this is the container wrapper -->
+      <ul class="cd-switcher">
+          <li><a href="#0">Sign in</a></li>
+          <li><a href="#1">New account</a></li>
+      </ul>
+
+      <div id="cd-login">
+          <!-- log in form -->
+          <form class="cd-form">
+              <p class="fieldset">
+                  <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+              </p>
+              <p class="fieldset">
+                  <label class="image-replace cd-password" for="signin-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signin-password" type="password" placeholder="Password">
+              </p>
+              <p class="fieldset">
+                  <input type="checkbox" id="remember-me" checked>
+                  <label for="remember-me">Remember me</label>
+              </p>
+              <p class="fieldset">
+                  <button type="submit" value="Login" class="btn btn-blue btn-effect">Login</button>
+              </p>
+          </form>
+      </div>
+      <!-- cd-login -->
+
+      <div id="cd-signup">
+          <!-- sign up form -->
+          <form class="cd-form">
+              <p class="fieldset">
+                  <label class="image-replace cd-username" for="signup-username">Username</label>
+                  <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+              </p>
+              <p class="fieldset">
+                  <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+              </p>
+              <p class="fieldset">
+                  <label class="image-replace cd-password" for="signup-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="Password">
+              </p>
+              <p class="fieldset">
+                  <input type="checkbox" id="accept-terms">
+                  <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+              </p>
+              <p class="fieldset">
+                  <button class="btn btn-blue btn-effect" type="submit" value="Create account">Create Account</button>
+              </p>
+          </form>
+      </div>
+      <!-- cd-signup -->
+  </div>
+  <!-- cd-user-modal-container -->
+</div>
+<!-- cd-user-modal -->
+<!-- ===== End of Login Pop Up div ===== -->
