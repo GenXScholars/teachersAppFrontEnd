@@ -317,7 +317,7 @@ img {
 }
 
 .overlay-black:before {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
     display: block;
@@ -1341,7 +1341,7 @@ section.pricing-tables {
 
 
 /* --------------------------------------
-    5. Headers - Navigation 
+    5. Headers - Navigation
 -------------------------------------- */
 
 
@@ -1375,7 +1375,7 @@ nav.navbar {
 }
 
 .navbar-brand img {
-    height: 30px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -1969,7 +1969,7 @@ footer {
 
 footer .footer-info {
     position: relative;
-    background: url(../images/img/footer-bg.jpg) no-repeat;
+
     background-size: cover;
 }
 
@@ -2014,7 +2014,7 @@ footer .footer-info .footer-about {
 }
 
 footer .footer-info .footer-about img {
-    height: 33px;
+    height: 53px;
 }
 
 footer .footer-info .footer-about ul li {
@@ -2348,11 +2348,12 @@ footer .copyright .social-btn-roll {
 
 /*** ====== 7.1.1 Version 1 ====== ***/
 
+/*** Changed Backgroud Image from Image 1 to Hired.jpg ***/
 section.main {
-    background: url('../images/img/image1.jpg') no-repeat;
+    background: url('../images/img/') no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 500px;
+    height: 340px;
 }
 
 section.main .wrapper {
