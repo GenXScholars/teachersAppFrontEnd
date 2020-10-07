@@ -16,6 +16,7 @@ import { FindCandidateComponent } from './components/find-candidate/find-candida
 import { PostJobComponent } from './components/post-job/post-job.component';
 import { SearchJobComponent } from './components/search-job/search-job.component';
 import { SubmitResumeComponent } from './components/submit-resume/submit-resume.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { SubmitResumeComponent } from './components/submit-resume/submit-resume.
     FindCandidateComponent,
     PostJobComponent,
     SearchJobComponent,
-    SubmitResumeComponent
+    SubmitResumeComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

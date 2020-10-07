@@ -10,6 +10,7 @@ import { FindCandidateComponent } from './components/find-candidate/find-candida
 import { PostJobComponent } from './components/post-job/post-job.component';
 import { SearchJobComponent } from './components/search-job/search-job.component';
 import { SubmitResumeComponent } from './components/submit-resume/submit-resume.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 const routes: Routes = [
   {path:'', component: HomepageComponent},
