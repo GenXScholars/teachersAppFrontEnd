@@ -38,7 +38,7 @@
                       <li class="dropdown simple-menu">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">For Candidates<i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                              <li><a routerLink= '/searchJob' >search jobs 1</a></li>
+                              <li><a routerLink= '/searchJob' >search jobs</a></li>
                               <li><a routerLink= '/submitResume' >submit resume</a></li>
                           </ul>
                       </li>
@@ -47,7 +47,7 @@
                       <li class="dropdown simple-menu">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">for employers<i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                              <li><a routerLink = '/findCandidate' >find a candidate 1</a></li>
+                              <li><a routerLink = '/findCandidate' >find a candidate</a></li>
                               <li><a routerLink = '/postJob' >post a job</a></li>
                           </ul>
                       </li>
@@ -104,9 +104,13 @@
                   <input type="checkbox" id="remember-me" checked>
                   <label for="remember-me">Remember me</label>
               </p>
+
               <p class="fieldset">
-                  <button type="submit" value="Login" class="btn btn-blue btn-effect">Login</button>
+                  <a style="display:block; color:black" type="submit" value="Login" class="btn btn-blue btn-effect">Login</a>
               </p>
+              <p class="fieldset">
+                <a routerLink='/forgot-password' value="forgot-password" class="btn btn-red btn-effect">forgot Password</a>
+            </p>
           </form>
       </div>
       <!-- cd-login -->
@@ -126,12 +130,17 @@
                   <label class="image-replace cd-password" for="signup-password">Password</label>
                   <input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="Password">
               </p>
+
+              <p class="fieldset">
+                <label class="image-replace cd-password" for="signup-password">Confirm Password</label>
+                <input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="Confirm Password">
+            </p>
               <p class="fieldset">
                   <input type="checkbox" id="accept-terms">
-                  <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                  <label for="accept-terms">I agree to the <a routerLink='/terms' >Terms</a></label>
               </p>
               <p class="fieldset">
-                  <button class="btn btn-blue btn-effect" type="submit" value="Create account">Create Account</button>
+                  <a class="btn btn-blue btn-effect" type="submit" value="Create account">Create Account</a>
               </p>
           </form>
       </div>

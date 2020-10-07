@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-all-teachers',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-teachers.component.scss']
 })
 export class AllTeachersComponent implements OnInit {
+  constructor(private spinner: NgxSpinnerService) {}
 
-  constructor() { }
+  ngOnInit() {
+    /** spinner starts on init */
+    this.spinner.show();
 
-  ngOnInit(): void {
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 1000);
   }
 
 }

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +17,8 @@ import { PostJobComponent } from './components/post-job/post-job.component';
 import { SearchJobComponent } from './components/search-job/search-job.component';
 import { SubmitResumeComponent } from './components/submit-resume/submit-resume.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
 
 
 @NgModule({
@@ -39,9 +41,25 @@ import { SliderComponent } from './components/slider/slider.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TeachersProfileModule
+    TeachersProfileModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(private spinner: NgxSpinnerService) {}
+
+  ngOnInit() {
+    /** spinner starts on init */
+    this.spinner.show();
+
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 1000);
+  }
+}
