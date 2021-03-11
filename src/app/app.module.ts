@@ -19,6 +19,7 @@ import { SubmitResumeComponent } from './components/submit-resume/submit-resume.
 import { SliderComponent } from './components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
+import { PrivacyComponent } from './components/privacy/privacy.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
     PostJobComponent,
     SearchJobComponent,
     SubmitResumeComponent,
-    SliderComponent
+    SliderComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,

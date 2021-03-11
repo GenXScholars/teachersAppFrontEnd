@@ -11,6 +11,7 @@ import { PostJobComponent } from './components/post-job/post-job.component';
 import { SearchJobComponent } from './components/search-job/search-job.component';
 import { SubmitResumeComponent } from './components/submit-resume/submit-resume.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { PrivacyComponent } from './components/privacy/privacy.component';
 
 const routes: Routes = [
   {path:'', component: HomepageComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'findCandidate', component:FindCandidateComponent},
   {path:'postJob', component:PostJobComponent},
   {path:'searchJob', component:SearchJobComponent},
-  {path:'submitResume', component:SubmitResumeComponent}
+  { path: 'submitResume', component: SubmitResumeComponent },
+  {path: 'privacy', component: PrivacyComponent}
 ];
 
 @NgModule({
